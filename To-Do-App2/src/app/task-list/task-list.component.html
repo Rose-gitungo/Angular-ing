@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h2 class="text-warning text-center"> Task List</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let taskName of taskNames">
+                <td>{{taskName}}</td>
+                <td><input type="button" value="Delete Task" class="btn btn-danger"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

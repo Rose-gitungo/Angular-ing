@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card">
+        <div class="m-2">
+            <h2 class="text-center text-warning">Add Task here</h2>
+        </div>
+        <form action="">
+            <div class="card-body mt-2">
+                <div class="col-8">
+                    <input type="text" name="taskName" [(ngModel)]="taskName" id="" class="form-control">
+                </div>
+                <div class="mt-2 col-4">
+                    <input type="button" class="btn btn-success" value="AddTask" (click)="addTask()">
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
