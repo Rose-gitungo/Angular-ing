@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Mumbai Indians",
+        "icon": "iconic.png",
+        "players": [
+            {
+                "fullName": "Rohit Sharma",
+                "photo": "rohit-sharma.jpg",
+                "team": "Mumbai Indians",
+                "price": "15 crores",
+                "playingStatus": "Playing",
+                "role": "Batsman"
+            },
+            {
+                "fullName": "Jasprit Bumrah",
+                "photo": "jasprit-bumrah.jpg",
+                "team": "Mumbai Indians",
+                "price": "12 crores",
+                "playingStatus": "Playing",
+                "role": "Bowler"
+            },
+            {
+                "fullName": "Hardik Pandya",
+                "photo": "hardik-pandya.jpg",
+                "team": "Mumbai Indians",
+                "price": "11 crores",
+                "playingStatus": "Playing",
+                "role": "All-rounder"
+            },
+            {
+                "fullName": "Kieron Pollard",
+                "photo": "kieron-pollard.jpg",
+                "team": "Mumbai Indians",
+                "price": "8 crores",
+                "playingStatus": "Playing",
+                "role": "All-rounder"
+            },
+            {
+                "fullName": "Ishan Kishan",
+                "photo": "ishan-kishan.jpg",
+                "team": "Mumbai Indians",
+                "price": "6 crores",
+                "playingStatus": "Playing",
+                "role": "Batsman"
+            }
+        ]
+    },
+    {
+        "name": "Chennai Super Kings",
+        "icon": "Sakura.png",
+        "players": [
+            {
+                "fullName": "MS Dhoni",
+                "photo": "ms-dhoni.jpg",
+                "team": "Chennai Super Kings",
+                "price": "12 crores",
+                "playingStatus": "Playing",
+                "role": "Batsman"
+            },
+            {
+                "fullName": "Suresh Raina",
+                "photo": "suresh-raina.jpg",
+                "team": "Chennai Super Kings",
+                "price": "10 crores",
+                "playingStatus": "Playing",
+                "role": "Batsman"
+            },
+            {
+                "fullName": "Ravindra Jadeja",
+                "photo": "ravindra-jadeja.jpg",
+                "team": "Chennai Super Kings",
+                "price": "9 crores",
+                "playingStatus": "Playing",
+                "role": "All-rounder"
+            },
+            {
+                "fullName": "Deepak Chahar",
+                "photo": "deepak-chahar.jpg",
+                "team": "Chennai Super Kings",
+                "price": "6 crores",
+                "playingStatus": "Playing",
+                "role": "Bowler"
+            },
+            {
+                "fullName": "Faf du Plessis",
+                "photo": "faf-du-plessis.jpg",
+                "team": "Chennai Super Kings",
+                "price": "8 crores",
+                "playingStatus": "Playing",
+                "role": "Batsman"
+            }
+        ]
+    }
+]

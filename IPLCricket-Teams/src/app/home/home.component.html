@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-5" *ngFor="let T of Teams">
+            <!-- card-based grid of all teams! -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h1 class="text-center">{{T.name}}</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt nihil vel doloremque soluta
+                        facere
+                        dolor, dicta deserunt maxime nobis perspiciatis facilis fugiat explicabo nostrum voluptatem
+                        reprehenderit similique voluptate, excepturi eaque.
+                        Ipsam explicabo necessitatibus nulla commodi ea. Voluptas magni tempora cumque fugiat! Dolores
+                        ullam
+                        dicta placeat molestiae, nihil dolor perferendis
+                    </p>
+                    <a [routerLink]="['/teamDetails',T.name]" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

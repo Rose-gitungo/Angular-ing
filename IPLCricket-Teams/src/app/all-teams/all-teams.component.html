@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="mt-5">
+        <h1 class="text-center text-warning">All official Teams</h1>
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let team of Teams">
+                    <td>{{team.name}}</td>
+                    <td><a [routerLink]="['/teamDetails',team.name]" class="btn btn-warning">View Team</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<router-outlet></router-outlet>

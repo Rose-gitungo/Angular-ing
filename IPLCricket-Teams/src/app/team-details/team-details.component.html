@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="mt-5">
+        <h1 class="text-center">Team Details</h1>
+        <h2 class="text-danger text-center">{{ team.name }}</h2>
+        <div class="text-center">
+            <img [src]="team.icon" class="team-icon" alt="Team Icon">
+        </div>
+        <div class="mt-2">
+            <table class="table">
+                <thead>
+                    <th>PlayerCount</th>
+                    <th>Top Batsman</th>
+                    <th>Top Bowler</th>
+                    <th>Championship count</th>
+                </thead>
+                <tbody>
+                    <tr>{{playerCount}}</tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4" *ngFor="let player of team.players">
+                <div class="card" [routerLink]="['/playerDetails',player.fullName]"
+                    (click)="toPlayerDetailspage(fullName)">
+                    <img [src]="player.photo" class="" alt="{{player.photo}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ player.fullName }}</h5>
+                        <p class="card-text">Price: {{ player.price }}</p>
+                        <p class="card-text">Team: {{ player.team }}</p>
+                        <p class="card-text">Playing Status: {{ player.playingStatus }}</p>
+                        <p class="card-text">Role: {{ player.role }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
