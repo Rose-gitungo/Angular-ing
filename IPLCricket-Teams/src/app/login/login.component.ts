@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthServiceService } from '../Service/auth-service.service';
 import { TokenServiceService } from '../Service/token-service.service';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-login',
@@ -34,10 +35,10 @@ export class LoginComponent {
       if (u) {
         this.router.navigate(['/home']);
       } else {
-        alert("invalid email or password 1");
+        swal("invalid email or password 1");
       }
     } else {
-      alert("Invalid email or password 2")
+      swal("Invalid email or password 2")
     }
 
   }

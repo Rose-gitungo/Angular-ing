@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthServiceService } from '../Service/auth-service.service';
 import { Router } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-logout',
@@ -13,7 +14,7 @@ export class LogoutComponent {
   }
 
   logout() {
-    alert("You have logged out!")
+    swal("You have logged out!")
     this.authService.logout();
     this.router.navigate(['/login']);// Redirect to login page after logout
   }

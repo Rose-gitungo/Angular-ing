@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../models/user.model';
 import { AuthServiceService } from '../Service/auth-service.service';
 import { Router } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-registartion',
@@ -38,14 +39,14 @@ export class RegistartionComponent {
           console.log("post request successful", Response);
           if (Response) {
             this.user.push(Response)
-            alert("User Added successfully!")
+            swal("User Added successfully!")
             this.router.navigate(['/home']);
           }
 
         })
       )
     } else {
-      alert("Fill all fields")
+      swal("Fill all fields")
     }
 
   }

@@ -2,6 +2,7 @@ import { Component, resolveForwardRef } from '@angular/core';
 import { Team } from '../models/team.model';
 import { TeamServiceService } from '../team-service.service';
 import { v4 as uuidv4 } from 'uuid';
+import swal from 'sweetalert';
 @Component({
   selector: 'app-add-team',
   templateUrl: './add-team.component.html',
@@ -22,7 +23,7 @@ export class AddTeamComponent {
 
     this._team.createTeam(this.team).subscribe(
       (Response => {
-        alert("Team added successfully!")
+        swal("Team added successfully!")
         if (Response) {
 
           console.log(Response);

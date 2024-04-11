@@ -4,6 +4,7 @@ import { Team } from '../models/team.model';
 import { PlayerServiceService } from '../Service/player-service.service';
 import { TeamServiceService } from '../team-service.service';
 import { NgForm } from '@angular/forms';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-add-player',
@@ -39,9 +40,9 @@ export class AddPlayerComponent implements OnInit {
         this.teamService.updateTeam(selectedTeam).subscribe(
           (response) => {
             if (response) {
-              alert('Player Added successfully');
+              swal('Player Added successfully');
             } else {
-              alert('Failed to add player');
+              swal('Failed to add player');
 
             }
           }
