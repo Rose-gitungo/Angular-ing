@@ -1,0 +1,38 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <h3 class="mb-5">Sign in</h3>
+                        <form (ngSubmit)="login()" #myForm="">
+                            <div class="form-outline mb-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control form-control-lg"
+                                    [(ngModel)]="user.email" required />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="">Password</label>
+                                <input type="password" name="password" class="form-control form-control-lg"
+                                    [(ngModel)]="user.password" required />
+
+                            </div>
+
+                            <button data-mdb-button-init data-mdb-ripple-init type="submit"
+                                class="btn btn-primary btn-lg btn-block">Login</button>
+
+                        </form>
+
+
+                        <hr class="my-4">
+                        <div>
+                            <p>Don't have an Account? <a [routerLink]="['/register']">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

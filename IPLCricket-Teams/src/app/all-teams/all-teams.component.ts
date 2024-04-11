@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TeamServiceService } from '../team-service.service';
 
 
+
 @Component({
   selector: 'app-all-teams',
   templateUrl: './all-teams.component.html',
@@ -11,13 +12,13 @@ import { TeamServiceService } from '../team-service.service';
 export class AllTeamsComponent {
   constructor(public _teamsService: TeamServiceService) { }
 
-  Teams: any[] = [{
-    name: '',
-    icon: '',
-    players: []
-  }];
+  Teams: any[] = [];
 
   ngOnInit() {
-    this.Teams = this._teamsService.getAllTeams();
+    this._teamsService.getAllTeams().subscribe(
+      (teams: any[]) => {
+        this.Teams = teams;
+      }
+    )
   }
 }

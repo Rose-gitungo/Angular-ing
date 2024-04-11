@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="mt-2">
+        <h2 class="text-center">Player Details</h2>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th colspan="3" class="text-center">{{players.fullName}}</th>
+                </tr>
+                <tr>
+                    <img [src]="players.photo" class="" alt="{{players.photo}}">
+                </tr>
+                <tr>
+                    <th colspan="3" class="text-center text-danger">Team {{players.team}}</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Price</th>
+                    <td> {{players.price}}</td>
+                </tr>
+                <tr>
+                    <th> playingStatus</th>
+                    <td> {{players.playingStatus}}</td>
+                </tr>
+                <tr>
+                    <th>Role</th>
+                    <td> {{players.role}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

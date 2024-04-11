@@ -13,7 +13,9 @@
                         ullam
                         dicta placeat molestiae, nihil dolor perferendis
                     </p>
-                    <a [routerLink]="['/teamDetails',T.name]" class="btn btn-success">Read More</a>
+                    <a [routerLink]="['/allTeams/teamDetails',T.id]" class="btn btn-success"
+                        (click)="teamDetails(T.id)">Read
+                        More</a>
                 </div>
             </div>
         </div>

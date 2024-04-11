@@ -1,1 +1,41 @@
-<p>add-player works!</p>
+<!-- add-player.component.html -->
+<div class="container">
+    <h2>Add Player</h2>
+    <form (submit)="addPlayer()">
+        <div>
+            <label for="playerName">Player Name:</label>
+            <input type="text" class="form-control" id="playerName" [(ngModel)]="player.fullName" name="fullName"
+                required>
+        </div>
+        <div>
+            <label for="playerPhoto">Player Photo:</label>
+            <input type="text" class="form-control" id="playerPhoto" [(ngModel)]="player.photo" name="photo">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="playerTeam">Team:</label>
+                <select class="form-control" id="playerTeam" [(ngModel)]="player.team" name="team" required>
+                    <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label for="playerPrice">Price:</label>
+                <input type="text" class="form-control" id="playerPrice" [(ngModel)]="player.price" name="price">
+            </div>
+        </div>
+
+        <div>
+            <label for="playerPlayingStatus">Playing Status:</label>
+            <input type="text" class="form-control" id="playerPlayingStatus" [(ngModel)]="player.playingStatus"
+                name="playingStatus">
+        </div>
+        <div>
+            <label for="playerRole">Role:</label>
+            <input type="text" class="form-control" id="playerRole" [(ngModel)]="player.role" name="role">
+        </div>
+        <div class="mt-5 text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>

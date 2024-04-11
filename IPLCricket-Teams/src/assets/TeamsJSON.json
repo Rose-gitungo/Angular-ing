@@ -1,94 +1,171 @@
-[
+{
+  "teams": [
     {
-        "name": "Mumbai Indians",
-        "icon": "iconic.png",
-        "players": [
-            {
-                "fullName": "Rohit Sharma",
-                "photo": "rohit-sharma.jpg",
-                "team": "Mumbai Indians",
-                "price": "15 crores",
-                "playingStatus": "Playing",
-                "role": "Batsman"
-            },
-            {
-                "fullName": "Jasprit Bumrah",
-                "photo": "jasprit-bumrah.jpg",
-                "team": "Mumbai Indians",
-                "price": "12 crores",
-                "playingStatus": "Playing",
-                "role": "Bowler"
-            },
-            {
-                "fullName": "Hardik Pandya",
-                "photo": "hardik-pandya.jpg",
-                "team": "Mumbai Indians",
-                "price": "11 crores",
-                "playingStatus": "Playing",
-                "role": "All-rounder"
-            },
-            {
-                "fullName": "Kieron Pollard",
-                "photo": "kieron-pollard.jpg",
-                "team": "Mumbai Indians",
-                "price": "8 crores",
-                "playingStatus": "Playing",
-                "role": "All-rounder"
-            },
-            {
-                "fullName": "Ishan Kishan",
-                "photo": "ishan-kishan.jpg",
-                "team": "Mumbai Indians",
-                "price": "6 crores",
-                "playingStatus": "Playing",
-                "role": "Batsman"
-            }
-        ]
+      "name": "Mumbai Indians",
+      "icon": "mumbai-indians-icon.png",
+      "players": [
+        {
+          "fullName": "Rohit Sharma",
+          "photo": "rohit-sharma.jpg",
+          "team": "Mumbai Indians",
+          "price": "15 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Jasprit Bumrah",
+          "photo": "jasprit-bumrah.jpg",
+          "team": "Mumbai Indians",
+          "price": "12 crores",
+          "playingStatus": "Playing",
+          "role": "Bowler"
+        },
+        {
+          "fullName": "Hardik Pandya",
+          "photo": "hardik-pandya.jpg",
+          "team": "Mumbai Indians",
+          "price": "11 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Kieron Pollard",
+          "photo": "kieron-pollard.jpg",
+          "team": "Mumbai Indians",
+          "price": "8 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Ishan Kishan",
+          "photo": "ishan-kishan.jpg",
+          "team": "Mumbai Indians",
+          "price": "6 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        }
+      ],
+      "id": "dba1"
     },
     {
-        "name": "Chennai Super Kings",
-        "icon": "Sakura.png",
-        "players": [
-            {
-                "fullName": "MS Dhoni",
-                "photo": "ms-dhoni.jpg",
-                "team": "Chennai Super Kings",
-                "price": "12 crores",
-                "playingStatus": "Playing",
-                "role": "Batsman"
-            },
-            {
-                "fullName": "Suresh Raina",
-                "photo": "suresh-raina.jpg",
-                "team": "Chennai Super Kings",
-                "price": "10 crores",
-                "playingStatus": "Playing",
-                "role": "Batsman"
-            },
-            {
-                "fullName": "Ravindra Jadeja",
-                "photo": "ravindra-jadeja.jpg",
-                "team": "Chennai Super Kings",
-                "price": "9 crores",
-                "playingStatus": "Playing",
-                "role": "All-rounder"
-            },
-            {
-                "fullName": "Deepak Chahar",
-                "photo": "deepak-chahar.jpg",
-                "team": "Chennai Super Kings",
-                "price": "6 crores",
-                "playingStatus": "Playing",
-                "role": "Bowler"
-            },
-            {
-                "fullName": "Faf du Plessis",
-                "photo": "faf-du-plessis.jpg",
-                "team": "Chennai Super Kings",
-                "price": "8 crores",
-                "playingStatus": "Playing",
-                "role": "Batsman"
-            }
-        ]
+      "name": "Chennai Super Kings",
+      "icon": "chennai-super-kings-icon.png",
+      "players": [
+        {
+          "fullName": "MS Dhoni",
+          "photo": "ms-dhoni.jpg",
+          "team": "Chennai Super Kings",
+          "price": "12 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Suresh Raina",
+          "photo": "suresh-raina.jpg",
+          "team": "Chennai Super Kings",
+          "price": "10 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Ravindra Jadeja",
+          "photo": "ravindra-jadeja.jpg",
+          "team": "Chennai Super Kings",
+          "price": "9 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Deepak Chahar",
+          "photo": "deepak-chahar.jpg",
+          "team": "Chennai Super Kings",
+          "price": "6 crores",
+          "playingStatus": "Playing",
+          "role": "Bowler"
+        },
+        {
+          "fullName": "Faf du Plessis",
+          "photo": "faf-du-plessis.jpg",
+          "team": "Chennai Super Kings",
+          "price": "8 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        }
+      ],
+      "id": "a8b0"
+    },
+    {
+      "id": "3456y",
+      "name": "Team1",
+      "icon": "sakura.jpg",
+      "players": [
+        {
+          "fullName": "Gorgeous",
+          "photo": "sakura.png",
+          "team": "3456y",
+          "price": "89.09",
+          "playingStatus": "playing",
+          "role": "Batsan"
+        },
+        {
+          "fullName": "r Rose",
+          "photo": "sakura.png",
+          "team": "3456y",
+          "price": "89.09",
+          "playingStatus": "playing",
+          "role": "Batsan"
+        }
+      ]
+    },
+    {
+      "id": "789iu",
+      "name": "TEam3",
+      "icon": "nonig.png",
+      "players": []
+    },
+    {
+      "id": "abcd3",
+      "name": "team254",
+      "icon": "254.jpg",
+      "players": []
+    },
+    {
+      "id": "053f401c-61ae-4b05-812b-a31d42198b2e",
+      "name": "team256",
+      "icon": "254.jpg",
+      "players": []
     }
-]
+  ],
+  "users": [
+    {
+      "username": "Rose",
+      "email": "gitungoros3@gmail.com",
+      "password": "12345",
+      "id": "17f8"
+    },
+    {
+      "id": "7c9e",
+      "userName": "roseng",
+      "email": "gitungoros3@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "2d0e",
+      "userName": "roseng",
+      "email": "gitungoros3@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "1cb4",
+      "userName": "roseng5",
+      "email": "example@example.com",
+      "password": "12345"
+    },
+    {
+      "id": "b5f2",
+      "userName": "monsuir",
+      "email": "monsuir@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

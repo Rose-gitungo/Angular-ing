@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="team">
 
     <div class="mt-5">
         <h1 class="text-center">Team Details</h1>
@@ -6,7 +6,7 @@
         <div class="text-center">
             <img [src]="team.icon" class="team-icon" alt="Team Icon">
         </div>
-        <div class="mt-2">
+        <div class="mt-5">
             <table class="table">
                 <thead>
                     <th>PlayerCount</th>
@@ -15,10 +15,12 @@
                     <th>Championship count</th>
                 </thead>
                 <tbody>
-                    <tr>{{playerCount}}</tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
+                    <tr>
+                        <td>{{playerCount}}</td>
+                        <td>Top BatsMan</td>
+                        <td>Top Bowler</td>
+                        <td>0</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -26,7 +28,9 @@
             <div class="col-md-4 mb-4" *ngFor="let player of team.players">
                 <div class="card" [routerLink]="['/playerDetails',player.fullName]"
                     (click)="toPlayerDetailspage(fullName)">
+
                     <img [src]="player.photo" class="" alt="{{player.photo}}">
+
                     <div class="card-body">
                         <h5 class="card-title">{{ player.fullName }}</h5>
                         <p class="card-text">Price: {{ player.price }}</p>

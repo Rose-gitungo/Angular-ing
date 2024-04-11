@@ -1,6 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TeamServiceService } from '../team-service.service';
 import { ActivatedRoute } from '@angular/router';
+
+interface Team {
+  name: string;
+  icon: string;
+  players: Player[];
+  id: any;
+}
+
+// Define an interface to represent a player
+interface Player {
+  fullName: string;
+  photo: string;
+  team: string;
+  price: string;
+  playingStatus: string;
+  role: string;
+}
 
 @Component({
   selector: 'app-team-details',
@@ -9,30 +26,31 @@ import { ActivatedRoute } from '@angular/router';
   providers: [TeamServiceService]
 })
 
-export class TeamDetailsComponent {
-  constructor(public _teamsService: TeamServiceService, private _ActivatedRoute: ActivatedRoute) { }
+export class TeamDetailsComponent implements OnInit {
+  constructor(private _teamsService: TeamServiceService, private _ActivatedRoute: ActivatedRoute) { }
 
-  team: any;
-  Name: any;
+  team: Team | undefined;
+  id: any;
   playerCount: number | undefined;
 
   ngOnInit() {
     //retreieve router link data:
     this._ActivatedRoute.params.subscribe(params => {
-      this.Name = params['name'];
-      //use name to get team details
-      this.team = this._teamsService.getTeamByName(this.Name);
+      this.id = params['id'];
 
-      if (this.team) {
-        this.playerCount = this.team.players.length;
-      }
+      this._teamsService.getTeamByid(this.id).subscribe(
+        (team: Team) => {
+          this.team = team;
+          if (this.team) {
+            this.playerCount = this.team.players.length;
+          }
+        }
+      )
     });
-
   }
 
   fullName: any;
-  toPlayerDetailspage(fullName: string) {
-    return this._teamsService.getPlayerDetailsByName(fullName);
-
+  toPlayerDetailspage(fullName: string): void {
+    // this.router.navigate(['/allTeams/teamDetails', this.team.id, 'playerDetails', name]);
   }
 }

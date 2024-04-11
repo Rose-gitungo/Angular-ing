@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TeamServiceService } from '../team-service.service';
+import { Team } from '../models/team.model';
 
 @Component({
   selector: 'app-home',
@@ -7,17 +8,22 @@ import { TeamServiceService } from '../team-service.service';
   styleUrl: './home.component.css',
   providers: [TeamServiceService]
 })
-export class HomeComponent {
 
-  constructor(public _teamsService: TeamServiceService) { }
+export class HomeComponent implements OnInit {
 
-  Teams: any[] = [{
-    name: '',
-    icon: '',
-    players: []
-  }];
+  constructor(private _teamsService: TeamServiceService) { }
+
+  Teams: Team[] = [];
 
   ngOnInit() {
-    this.Teams = this._teamsService.getAllTeams();
+    this._teamsService.getAllTeams().subscribe(
+      (teams: Team[]) => {
+        this.Teams = teams;
+        console.log(this.Teams);
+
+      });
+  }
+  teamDetails(id: any) {
+    this._teamsService.getTeamByid(id);
   }
 }
