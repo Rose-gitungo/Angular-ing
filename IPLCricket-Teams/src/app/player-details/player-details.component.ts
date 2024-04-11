@@ -22,8 +22,6 @@ export class PlayerDetailsComponent {
       this._teamsService.getPlayerDetailsByName(this.Name).subscribe(
         (player) => {
           this.players = player;
-          console.log(this.players);
-
         })
 
     });

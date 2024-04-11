@@ -134,6 +134,27 @@
       "name": "team256",
       "icon": "254.jpg",
       "players": []
+    },
+    {
+      "id": "b2b48713-87bd-460c-985b-ca55566aef40",
+      "name": "team52",
+      "icon": "C:\\fakepath\\Sakura.jpg",
+      "players": []
+    },
+    {
+      "id": "f06cc607-72e4-43ea-a436-4f22810cf887",
+      "name": "Chicago Bulls",
+      "icon": "C:\\fakepath\\Sakura.jpg",
+      "players": [
+        {
+          "fullName": "player chicago",
+          "photo": "C:\\fakepath\\Sakura.jpg",
+          "team": "f06cc607-72e4-43ea-a436-4f22810cf887",
+          "price": "89.90",
+          "playingStatus": "playing",
+          "role": "Batsman"
+        }
+      ]
     }
   ],
   "users": [
