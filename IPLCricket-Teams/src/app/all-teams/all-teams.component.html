@@ -12,6 +12,7 @@
                 <tr *ngFor="let team of Teams">
                     <td>{{team.name}}</td>
                     <td><a [routerLink]="['/allTeams/teamDetails',team.id]" class="btn btn-warning">View Team</a></td>
+                    <td><a (click)="deleteTeam(team.id)" class="btn btn-danger">Delete Team</a></td>
                 </tr>
             </tbody>
         </table>

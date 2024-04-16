@@ -21,4 +21,7 @@ export class AllTeamsComponent {
       }
     )
   }
+  deleteTeam(teamId: any) {
+
+  }
 }

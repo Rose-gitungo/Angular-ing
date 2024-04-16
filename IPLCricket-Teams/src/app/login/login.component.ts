@@ -3,7 +3,6 @@ import { User } from '../models/user.model';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthServiceService } from '../Service/auth-service.service';
-import { TokenServiceService } from '../Service/token-service.service';
 import swal from 'sweetalert';
 
 @Component({
@@ -13,8 +12,8 @@ import swal from 'sweetalert';
 })
 export class LoginComponent {
 
-  email: string = '';
-  password: string = "";
+  // email: string = '';
+  // password: string = "";
 
   user: User = {
     userName: '',
@@ -27,19 +26,24 @@ export class LoginComponent {
     private _authService: AuthServiceService) { }
 
   login() {
+    console.log(this.user);
     if (this.user.email && this.user.password) {
-      // const token = this._tokenService.generateToken({ email: this.email })
-      // localStorage.setItem('token', token);
-      const u = this._authService.login(this.user);
-
-      if (u) {
-        this.router.navigate(['/home']);
-      } else {
-        swal("invalid email or password 1");
-      }
+      this._authService.login(this.user).subscribe(
+        (loggedIn) => {
+          if (loggedIn) {
+            this.router.navigate(['/dashBoard']);
+          } else {
+            swal("Invalid email or password");
+          }
+        },
+        (error) => {
+          console.error('Error during login:', error);
+          swal("An error occurred during login");
+        }
+      );
     } else {
-      swal("Invalid email or password 2")
+      swal("Please enter email and password");
     }
-
   }
+
 }
