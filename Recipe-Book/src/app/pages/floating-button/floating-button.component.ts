@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class FloatingButtonComponent {
   constructor(private router: Router, public dialog: MatDialog) { }
-
   addRecipe() {
     this.router.navigate(['dashBoard/addRecipe']);
   }

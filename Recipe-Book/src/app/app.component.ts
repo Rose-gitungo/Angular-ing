@@ -6,10 +6,10 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  // allComponentsLoaded: boolean = false;
+  allComponentsLoaded: boolean = false;
 
-  // ngAfterViewInit(): void {
-  //   this.allComponentsLoaded = true;
-  // }
+  ngAfterViewInit(): void {
+    this.allComponentsLoaded = true;
+  }
   title = 'Recipe-Book';
 }

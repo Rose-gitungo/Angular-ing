@@ -22,16 +22,16 @@ export class RegisterComponent {
   }
 
   RegisterUser() {
-    console.log(this.user);
-    console.log(this.confirmPassword);
-
     if (this.user.password != this.confirmPassword) {
       swal("Passwords do not match!")
     }
+    this.userService.createUserProfile(this.user).subscribe(
+      () => {
+        swal("User created successfully!")
+        this.router.navigate(['/dashBoard']);
+      }
+    )
 
-    //create a new user
-    const jwt = this.userService.createUserProfile(this.user)
-    console.log(jwt);
 
 
 

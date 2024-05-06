@@ -13,18 +13,23 @@
             </p>
         </mat-card-content>
         <mat-card-actions class="card-footer">
-            <button mat-icon-button class="example-icon favorite-icon">
-                <mat-icon>favorite</mat-icon>
-            </button>
-            <button mat-icon>
-                <mat-icon><a [routerLink]="['dashBoard/edit' ,recipe.id ]">edit&nbsp;</a></mat-icon>
-            </button>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-                <mat-icon>share</mat-icon>
-            </button>
-            <button (click)="deleteRecipe(recipe.id)">
-                <mat-icon color="warn">delete</mat-icon>
-            </button>
+
+            <div>
+                <button mat-icon-button class="example-icon favorite-icon">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+                <button mat-icon>
+                    <mat-icon><a [routerLink]="['edit' ,recipe.id ]">edit&nbsp;</a></mat-icon>
+                </button>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>share</mat-icon>
+                </button>
+            </div>
+            <div class="absolute right-0">
+                <button mat-icon-button (click)="deleteRecipe(recipe.id)">
+                    <mat-icon color="warn">delete</mat-icon>
+                </button>
+            </div>
         </mat-card-actions>
     </mat-card>
 </div>

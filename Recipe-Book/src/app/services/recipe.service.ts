@@ -43,4 +43,5 @@ export class RecipeService {
     const headers = new HttpHeaders().set('Authorization', 'Bearer ' + jwt);
     return this.http.delete<any>(`http://localhost:8080/api/recipes/${id}`, { headers: headers });
   }
+
 }

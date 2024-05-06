@@ -27,12 +27,13 @@ export class UserService {
     );
   }
 
-  createUserProfile(user: User) {
-    return this.http.post('localhost:8080/auth/signup', user).subscribe(
-      (Response: any) => {
-        //response is jwt:
-        console.log(Response);
-      }
+  createUserProfile(user: User): Observable<any> {
+    return this.http.post<any>('http://localhost:8080/auth/signup', user).pipe(
+      map(response => {
+        localStorage.setItem('token', response.jwt);
+        this.isAuthenticated.next(true);
+        return response;
+      })
     )
   }
 
