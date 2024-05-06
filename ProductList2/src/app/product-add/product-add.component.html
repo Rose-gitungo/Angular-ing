@@ -7,47 +7,48 @@
                 <div class="row">
                     <div class="col-3">
                         <label for="id" class="fw-bold">ID</label>
-                        <input type="text" [(ngModel)]="product.id" class="form-control">
+                        <input type="text" [(ngModel)]="product.id" name="id" class="form-control">
                     </div>
                     <div class="col-3">
                         <label for="titleid" class="fw-bold">Title</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.title">
+                        <input type="text" class="form-control" [(ngModel)]="product.title" name="title">
                     </div>
                     <div class="col-3">
                         <label for="" class="fw-bold">Description</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.description">
+                        <input type="text" class="form-control" [(ngModel)]="product.description" name="description">
                     </div>
                     <div class="col-3">
                         <label for="" class="fw-bold">Price</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.price">
+                        <input type="text" class="form-control" [(ngModel)]="product.price" name="price">
                     </div>
                     <div class="col-3">
                         <label for="" class="fw-bold">Disc %</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.discountPercentage">
+                        <input type="text" class="form-control" [(ngModel)]="product.discountPercentage"
+                            name="discountPercentage">
                     </div>
                     <div class="col-3">
                         <label for="" class="fw-bold">Rating</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.rating">
+                        <input type="text" class="form-control" [(ngModel)]="product.rating" name="rating">
                     </div>
                     <div class="col-3">
                         <label for="" class="fw-bold">Stock</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.stock">
+                        <input type="text" class="form-control" [(ngModel)]="product.stock" name="stock">
                     </div>
                     <div class="col-3">
                         <label for="id" class="fw-bold">Brand</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.brand">
+                        <input type="text" class="form-control" [(ngModel)]="product.brand" name="brand">
                     </div>
                     <div class="col-3">
                         <label for="id" class="fw-bold">Category</label>
-                        <input type="text" class="form-control" [(ngModel)]="product.category">
+                        <input type="text" class="form-control" [(ngModel)]="product.category" name="category">
                     </div>
                     <div class="col-3">
                         <label for="id" class="fw-bold">Thumbnail</label>
-                        <input type="file" class="form-control" [(ngModel)]="product.thumbnail">
+                        <input type="file" class="form-control" [(ngModel)]="product.thumbnail" name="thumbnail">
                     </div>
                     <div class="col-3">
                         <label for="id" class="fw-bold">other Images</label>
-                        <input type="file" class="form-control" [(ngModel)]="product.images">
+                        <input type="file" class="form-control" [(ngModel)]="product.images" name="images">
                     </div>
                     <div class="text-center mt-5">
                         <input type="button" class="btn btn-success" (click)="addProduct($event)" value="submit">&nbsp;

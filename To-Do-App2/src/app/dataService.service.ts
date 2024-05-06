@@ -5,16 +5,21 @@ import { Injectable } from '@angular/core';
 })
 export class DataServiceService {
 
-  taskNames: string[] = [];
+  taskNames: any[] = [];
 
-  addTask(taskName: string) {
+  addTask(taskName: string, taskId: number) {
     this.taskNames = JSON.parse(localStorage.getItem("Tasks") ?? '[]');
-    this.taskNames.push(taskName);
+    this.taskNames.push(taskName, taskId);
     localStorage.setItem("Tasks", JSON.stringify(this.taskNames));
   }
 
   //getting all tasks from local storage
   getAllTasks(): string[] {
     return JSON.parse(localStorage.getItem('Tasks') ?? '{}')
+  }
+
+  deleteTask(taskId: number) {
+    this.taskNames = JSON.parse(localStorage.getItem("Tasks") ?? '[]');
+    localStorage.setItem("Tasks", JSON.stringify(this.taskNames));
   }
 }

@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductAddServiceComponent } from './product-add-service/product-add-service.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     MainComponent,
     NavBarComponent,
     ProductAddComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductAddServiceComponent
   ],
   imports: [
     BrowserModule,

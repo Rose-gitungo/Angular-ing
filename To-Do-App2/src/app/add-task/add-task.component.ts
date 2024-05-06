@@ -6,14 +6,16 @@ import { DataServiceService } from '../dataService.service';
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.css'
 })
+
 export class AddTaskComponent {
 
   constructor(private _dataService: DataServiceService) { }
 
   taskName: string = '';
+  taskId: number = 0;
 
   addTask() {
-    this._dataService.addTask(this.taskName);
+    this._dataService.addTask(this.taskName, this.taskId);
   }
 
 

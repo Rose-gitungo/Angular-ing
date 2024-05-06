@@ -10,7 +10,7 @@
         <tbody>
             <tr *ngFor="let taskName of taskNames">
                 <td>{{taskName}}</td>
-                <td><input type="button" value="Delete Task" class="btn btn-danger"></td>
+                <td><input type="button" value="Delete Task" class="btn btn-danger" (click)="deleteTask(taskName)"></td>
             </tr>
         </tbody>
     </table>

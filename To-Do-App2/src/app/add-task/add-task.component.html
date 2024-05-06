@@ -5,12 +5,20 @@
         </div>
         <form action="">
             <div class="card-body mt-2">
-                <div class="col-8">
-                    <input type="text" name="taskName" [(ngModel)]="taskName" id="" class="form-control">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="">TaskId</label>
+                        <input type="text" name="taskId" [(ngModel)]="taskId" id="" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="">TaskName</label>
+                        <input type="text" name="taskName" [(ngModel)]="taskName" id="" class="form-control">
+                    </div>
+                    <div class="mt-2 col-4">
+                        <input type="button" class="btn btn-success" value="AddTask" (click)="addTask()">
+                    </div>
                 </div>
-                <div class="mt-2 col-4">
-                    <input type="button" class="btn btn-success" value="AddTask" (click)="addTask()">
-                </div>
+
 
             </div>
         </form>

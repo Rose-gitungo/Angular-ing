@@ -28,9 +28,6 @@ export class ProductAddComponent {
     event.preventDefault();
     const storedProducts = localStorage.getItem('products');
 
-    // const storedProducts = localStorage.getItem('products');
-
-
     const inputid = (document.querySelector('input[name="id"]') as HTMLInputElement).value;
     const inputTitle = (document.querySelector('input[name="title"]') as HTMLInputElement).value;
     const inputDescription = (document.querySelector('input[name="description"]') as HTMLInputElement).value;
@@ -72,25 +69,11 @@ export class ProductAddComponent {
       images: inputImages
     };
 
-    // if (storedProducts) {
-    //   this.products = JSON.parse(storedProducts);
-    // } else {
-    //   console.log("Error, No products in local storage")
-    // }
-
     if (storedProducts) {
       this.products = JSON.parse(storedProducts);
       this.products.push((productAdd));
       alert('product is added!')
       localStorage.setItem("products", JSON.stringify(this.products));
     }
-
-
-    //fetching all the products storing in storedProducts -> how is this significant then?
-
-
-
-
-
   }
 }

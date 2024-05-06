@@ -1,0 +1,27 @@
+.example-card-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center; */
+     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px; 
+}
+
+.example-card {
+    width: 320px;
+    height: 450px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.foodimage {
+    height: 50%; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-footer {
+    margin-top: auto;
+    color: white;
+}

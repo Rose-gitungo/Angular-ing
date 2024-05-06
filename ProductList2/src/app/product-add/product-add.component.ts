@@ -26,6 +26,6 @@ export class ProductAddComponent {
     event.preventDefault();
     this.products = JSON.parse(localStorage.getItem('products') ?? '{}');
     this.products.push(this.product);
-    localStorage.setItem("products", JSON.stringify(this.products))
+    localStorage.setItem("products", JSON.stringify(this.products));
   }
 }

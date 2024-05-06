@@ -32,4 +32,8 @@ export class ProductListComponent {
       localStorage.setItem('products', JSON.stringify(this.products));
     }
   }
+
+  refreshProductList() {
+    this.getAllProducts();
+  }
 }

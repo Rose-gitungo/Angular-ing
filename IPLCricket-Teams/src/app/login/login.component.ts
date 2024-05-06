@@ -28,19 +28,10 @@ export class LoginComponent {
   login() {
     console.log(this.user);
     if (this.user.email && this.user.password) {
-      this._authService.login(this.user).subscribe(
-        (loggedIn) => {
-          if (loggedIn) {
-            this.router.navigate(['/dashBoard']);
-          } else {
-            swal("Invalid email or password");
-          }
-        },
-        (error) => {
-          console.error('Error during login:', error);
-          swal("An error occurred during login");
-        }
-      );
+      this._authService.login(this.user);
+      this.router.navigate(['/dashBoard']);
+      swal("Thank you for login in!")
+
     } else {
       swal("Please enter email and password");
     }

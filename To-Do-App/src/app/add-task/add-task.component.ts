@@ -15,6 +15,4 @@ export class AddTaskComponent {
     console.log(this.taskNames);
     localStorage.setItem("Tasks", JSON.stringify(this.taskNames));
   }
-
-
 }

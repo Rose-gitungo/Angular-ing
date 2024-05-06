@@ -1,0 +1,8 @@
+div {
+    width: 100%;
+    bottom: 0;
+    background-color: pink;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}

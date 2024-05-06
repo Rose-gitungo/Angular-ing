@@ -17,6 +17,12 @@ export class TaskListComponent {
     this.taskNames = this._dataService.getAllTasks();
     console.log(this.taskNames);
   }
+  deleteTask(taskName: string) {
+
+  }
+  refreshProductList() {
+    this._dataService.getAllTasks();
+  }
 
 
 }
