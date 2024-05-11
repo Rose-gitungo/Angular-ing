@@ -1,0 +1,72 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "To-do-App",
+      "description": "Make a To-DO-APP",
+      "date": "07/05/2024",
+      "time": "14:40",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Danger",
+      "description": "Too Spicy",
+      "time": "14:40"
+    },
+    {
+      "id": "3",
+      "title": "Delete Tasks",
+      "description": "Delete Tasks on to do App",
+      "date": "2024-05-08",
+      "time": "14:32"
+    },
+    {
+      "id": "4",
+      "title": "The three pigs",
+      "description": "This story is about pigs and the fox and all.",
+      "date": "2024-05-08",
+      "time": "16:13"
+    },
+    {
+      "id": "5",
+      "title": "House cleaning",
+      "description": "Cant go back!",
+      "time": 0
+    },
+    {
+      "id": "6",
+      "title": "Hous Cleaning56",
+      "description": "Pool warm",
+      "date": "2024-05-07",
+      "time": "19:47"
+    },
+    {
+      "id": "7",
+      "title": "Steak - Pasture Fed",
+      "description": "This story is about pigs and the fox and all.",
+      "date": "2024-05-16",
+      "time": "16:50"
+    },
+    {
+      "id": "8",
+      "title": "Pork Tenderloin Fajitas",
+      "description": "Story about bares and stuff",
+      "date": "2024-05-23",
+      "time": "19:03"
+    },
+    {
+      "id": "548d",
+      "title": "Wonyoung",
+      "description": "La-Vien Rose",
+      "date": "2024-05-10",
+      "time": "12:25"
+    },
+    {
+      "id": "8bef",
+      "title": "Attitude",
+      "description": "money - wise",
+      "time": "13:36"
+    }
+  ]
+}

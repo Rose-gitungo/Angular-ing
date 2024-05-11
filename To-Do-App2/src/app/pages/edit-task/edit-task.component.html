@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="m-2">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center text-primary">Edit Task here</h2>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="editTask(task.id)">
+                    <div class="row">
+                        <input type="hidden" name="id" [(ngModel)]="task.id">
+                        <div class="col-5">
+                            <label for="date" class="bw">Date</label>
+                            <input type="date" name="date" id="" class="form-control" [(ngModel)]="task.date">
+                        </div>
+                        <div class="col-5">
+                            <label for="time" class="bw">Time</label>
+                            <input type="time" name="time" id="" class="form-control" [(ngModel)]="task.time">
+                        </div>
+                        <div class="col-5">
+                            <label for="date" class="bw">title</label>
+                            <input type="text" name="title" id="" class="form-control" [(ngModel)]="task.title">
+                        </div>
+                        <div class="col-5">
+                            <label for="date" class="bw">Description</label>
+                            <input type="textbox" name="description" id="" class="form-control"
+                                [(ngModel)]="task.description">
+                        </div>
+                        <div class="text-center mt-5">
+                            <input type="submit" class="btn btn-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- <div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="py-3 py-md-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9 col-xl-6">
+                                <div class="card widget-card border-light shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div id="bsb-calendar-1"
+                                            class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap5 bsb-calendar-theme">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <label for="time">Time</label>
+                            <input id="time" type="time" class="form-control" name="time" [(ngModel)]="task.time">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="title">Title</label>
+                            <input id="title" type="text" class="form-control" name="title" [(ngModel)]="task.title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="description">Description</label>
+                            <input id="description" type="text" class="form-control" name="description"
+                                [(ngModel)]="task.description">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+</div> -->

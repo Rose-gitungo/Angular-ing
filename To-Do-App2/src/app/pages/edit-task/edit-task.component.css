@@ -1,0 +1,14 @@
+ /* .edit-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      display: none;
+    }
+
+    .edit-container.visible {
+      display: block;
+    } */

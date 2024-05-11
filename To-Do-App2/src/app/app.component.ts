@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataServiceService } from './services/dataService.service';
 
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'To-Do-App';
+
 }

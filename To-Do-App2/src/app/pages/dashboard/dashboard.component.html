@@ -1,0 +1,21 @@
+<div class="m-5">
+    <h2 class="text-center"> Today's Date is : {{changedDate}}</h2>
+
+</div>
+<div class="row">
+    <div class="col-4" *ngFor="let task of Tasks">
+        <div class="m-2">
+            <div class="card" (click)="toTaskDetails(task.id)">
+                <div class="card-body">
+                    <h5 class="card-title">{{task.title}}</h5>
+                    <p class="card-text">{{task.description}}</p>
+                    <div class="text-right">
+                        <i class="bi bi-pen" style="color:pink;" (click)="editTask(task.id)"></i>&nbsp;
+                        <i class="bi bi-trash" style="color:pink;" (click)="deleteTask(task.id)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-floating-button></app-floating-button>

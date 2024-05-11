@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="m-2">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center text-primary">Add Task here</h2>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="addTask()">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="date" class="bw">Date</label>
+                            <input type="date" name="date" id="" class="form-control" [(ngModel)]="task.date">
+                        </div>
+                        <div class="col-5">
+                            <label for="time" class="bw">Time</label>
+                            <input type="time" name="time" id="" class="form-control" [(ngModel)]="task.time">
+                        </div>
+                        <div class="col-5">
+                            <label for="date" class="bw">Title</label>
+                            <input type="text" name="title" id="" class="form-control" [(ngModel)]="task.title">
+                        </div>
+                        <div class="col-5">
+                            <label for="date" class="bw">Description</label>
+                            <input type="textbox" name="description" id="" class="form-control"
+                                [(ngModel)]="task.description">
+                        </div>
+                        <div class="text-center mt-5">
+                            <input type="submit" class="btn btn-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

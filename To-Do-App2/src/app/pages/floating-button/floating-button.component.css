@@ -1,0 +1,9 @@
+.floating-button {
+    position: fixed;
+    bottom: 80px;  /*Adjust the distance from the bottom */
+     right: 20px; /* Adjust the distance from the right */
+    width: 60px;
+    height: 60px; 
+    /* background-color:rosybrown; */
+    
+}
